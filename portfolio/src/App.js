@@ -13,7 +13,6 @@ function App(props) {
       <div>Count: {props.count}</div>
 
       <button onClick={() => props.increaseCounter()}>Increase Count</button>
-
       <button onClick={() => props.decreaseCounter()}>Decrease Count</button>
     </div>
   )

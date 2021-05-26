@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import LandingPage from './LandingPage/LandingPage'
 import store from './redux/store';
 import { Provider } from 'react-redux';
 import reportWebVitals from './reportWebVitals';
@@ -9,7 +10,8 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <Provider store={store}>
     <React.StrictMode>
-      <App />
+      {/* <App /> */}
+      <LandingPage />
     </React.StrictMode>
   </Provider>,
   document.getElementById('root')
