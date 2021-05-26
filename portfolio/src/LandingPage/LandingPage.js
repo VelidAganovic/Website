@@ -10,6 +10,12 @@ function LandingPage(props) {
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
       </div>
     )
