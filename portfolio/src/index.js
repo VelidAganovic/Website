@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Background from './Background/Background'
+import IntroText from './IntroText/IntroText'
 import store from './redux/store';
 import { Provider } from 'react-redux';
 import reportWebVitals from './reportWebVitals';
@@ -11,8 +12,8 @@ ReactDOM.render(
   <Provider store={store}>
     <React.StrictMode>
       {/* <App /> */}
-      <Background />
-      {/* <h1>test</h1> */}
+      <Background/>
+      <IntroText></IntroText>
     </React.StrictMode>
   </Provider>,
   document.getElementById('root')

@@ -15,6 +15,17 @@ body {
   -moz-osx-font-smoothing: grayscale; */
 }
 
+.landing-text{
+  color: white;
+}
+
+.name {
+  color: #18CAE6
+}
+h1 {
+  color: white;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

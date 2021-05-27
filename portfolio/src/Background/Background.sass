@@ -10,7 +10,7 @@ body
   display: table
   width: 100%
   height: 100%
-  background-color: #2F2F2F
+  background-color: #000000
   color: #000
   line-height: 1.6
   position: relative
@@ -28,20 +28,19 @@ body
   
 .line
   position: absolute
-  width: 1px
+  width: 4px
   height: 120%
   top: 0
   left: 50%
-  -webkit-transform: translateY(-50px) rotate(27deg)
   // change this to remove line to background color of body
-  background: #2F2F2F
+  background: #2f2f2f
   overflow: hidden
 
   &::after
     content: ''
     display: block
     position: absolute
-    height: 15vh
+    height: 10vh
     width: 100%
     top: -50%
     left: 0
@@ -52,15 +51,15 @@ body
 
 
   // dirty fix find better way to do this
-  $sizes: 1 2s -50%, 2 2.2s -45%, 3 1.7s -40%, 4 3.1s -35%, 5 1.9s -30%, 6 2.4s -25%, 7 1.2s -20%, 8 1.5s -15%, 9 0.5s -10%, 10 0.9s -5%, 11 2.5s 0%, 12 3s 5%, 13 1s 5%, 14 2s 10%, 15 1.5s 15%, 16 2.5s 20%, 17 2s 25%, 18 1s 30%, 19 3s 35%, 19 2s 40%, 20 0.5s 45%, 21 2s 50%
+  $sizes: 1 1.3s 40% #18CAE6, 2 0.5s 45% #FFFFFF, 3 1.9s 50% #DF740C
 
-  @each $num, $duration, $spot in $sizes
+  @each $num, $duration, $spot, $color in $sizes
     &:nth-child(#{$num})
       margin-left: #{$spot}
       &::after
         animation-delay: #{$duration}
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, $color 75%, $color 100%)
 
-  
 
 @keyframes drop
   0%
