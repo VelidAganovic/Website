@@ -12,7 +12,8 @@ ReactDOM.render(
   <Provider store={store}>
     <React.StrictMode>
       {/* <App /> */}
-      <Background/>
+      <Background>
+      </Background>
       <IntroText></IntroText>
     </React.StrictMode>
   </Provider>,
