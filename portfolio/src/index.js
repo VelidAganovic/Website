@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import LandingPage from './LandingPage/LandingPage'
+import Background from './Background/Background'
 import store from './redux/store';
 import { Provider } from 'react-redux';
 import reportWebVitals from './reportWebVitals';
@@ -11,7 +11,8 @@ ReactDOM.render(
   <Provider store={store}>
     <React.StrictMode>
       {/* <App /> */}
-      <LandingPage />
+      <Background />
+      {/* <h1>test</h1> */}
     </React.StrictMode>
   </Provider>,
   document.getElementById('root')

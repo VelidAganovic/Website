@@ -1,7 +1,7 @@
 import React from 'react';
-import './LandingPage.css';
+import './Background.css';
 
-function LandingPage(props) {
+function Background(props) {
     // size is amount of drops also needs to be adjusted in css
     const size = 20;
     var indents = [];
@@ -13,9 +13,8 @@ function LandingPage(props) {
           <div class="lines">
             {indents}
         </div>
-        <h1>Hi! I'm Velid Aganovic, a Full-Stack Web Developer</h1> 
       </div>
     )
   }
 
-  export default LandingPage;
+  export default Background;
