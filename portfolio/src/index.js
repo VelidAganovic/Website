@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Background from './Components/Background/Background'
 import IntroContent from './Pages/LandingPage/IntroContent'
+import TestComponent from './Components/TestComponent/TestComponent'
 import store from './Redux/store';
 import { Provider } from 'react-redux';
 
@@ -10,9 +11,11 @@ ReactDOM.render(
   <Provider store={store}>
     <React.StrictMode>
       {/* <App /> */}
-      <Background>
+      {/* <Background>
       </Background>
-      <IntroContent></IntroContent>
+      <IntroContent></IntroContent> */}
+      <TestComponent></TestComponent>
+
     </React.StrictMode>
   </Provider>,
   document.getElementById('root')
