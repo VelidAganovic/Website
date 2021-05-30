@@ -1,11 +1,30 @@
 import React from 'react';
+import { connect } from "react-redux"
 import './IntroContent.css';
 import ReactDOM from 'react-dom';
 import Background from '../../Components/Background/Background'
+import {toAboutMePage, toProjectsPage,} from "../../Redux/PageNavigation/navigation.actions"
 
+const mapStateToProps = state => {
+    return {
+        count: state.navigation.count,
+        landingPage: state.navigation.landingPage, 
+        aboutmePage: state.navigation.aboutmePage,
+        projectsPage: state.navigation.projectsPage,
+    }
+}
+
+const mapDispatchToProps = dispatch => {
+    return {
+        toAboutMePage: () => dispatch(toAboutMePage()),
+ 
+        toProjectsPage: () => dispatch(toProjectsPage()),
+    }
+}
 
 class IntroContent extends React.Component {
     render() {
+        console.log(this.props.count)
         return (
             <div class="background">
 
@@ -16,7 +35,7 @@ class IntroContent extends React.Component {
             <br></br>
             A Full Stack Web Developer.
 
-            <a href="#" onClick={() => {ReactDOM.unmountComponentAtNode(document.getElementById('root')); }}class="animated-button1">
+            <a href="#" onClick={() => {this.props.toAboutMePage()}} class="animated-button1">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -30,4 +49,5 @@ class IntroContent extends React.Component {
     }
 }
 
-export default IntroContent;
+// export default IntroContent;
+export default connect(mapStateToProps, mapDispatchToProps)(IntroContent)

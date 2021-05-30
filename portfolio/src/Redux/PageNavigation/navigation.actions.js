@@ -1,4 +1,3 @@
-import { INCREMENT, DECREMENT } from './counter.types';
 import { TO_ABOUTME_PAGE, TO_PROJECTS_PAGE } from './navigation.types';
 
 
