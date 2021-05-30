@@ -35,13 +35,13 @@ class IntroContent extends React.Component {
             <br></br>
             A Full Stack Web Developer.
 
-            <a href="#" onClick={() => {this.props.toAboutMePage()}} class="animated-button1">
+            <button onClick={() => {this.props.toAboutMePage()}} class="animated-button1">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
                 Learn More
-            </a>
+            </button>
             
         </div>
         </div>
