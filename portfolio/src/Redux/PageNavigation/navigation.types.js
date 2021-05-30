@@ -1,0 +1,2 @@
+export const TO_ABOUTME_PAGE = 'TO_ABOUT_ME_PAGE';
+export const TO_PROJECTS_PAGE = 'TO_PROJECTS_PAGE';

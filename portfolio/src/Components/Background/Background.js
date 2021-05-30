@@ -9,11 +9,9 @@ class Background extends React.Component {
         lines.push(<div class="line"></div>);
         }
         return (
-            <div className="background">
             <div class="lines">
               {lines}
               </div>
-            </div>
         )
     }
 }

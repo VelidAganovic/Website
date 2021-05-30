@@ -10,12 +10,7 @@ import { Provider } from 'react-redux';
 ReactDOM.render(
   <Provider store={store}>
     <React.StrictMode>
-      {/* <App /> */}
-      {/* <Background>
-      </Background>
-      <IntroContent></IntroContent> */}
-      <TestComponent></TestComponent>
-
+      <IntroContent></IntroContent>
     </React.StrictMode>
   </Provider>,
   document.getElementById('root')
