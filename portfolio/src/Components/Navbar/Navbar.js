@@ -5,7 +5,7 @@ import * as AiIcons from 'react-icons/ai';
 import { SidebarData } from './SidebarData';
 import './Navbar.css';
 import { IconContext } from 'react-icons';
-import pf from '../../pf2.jpg'
+import pf from '../../pf3.jpg'
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
@@ -16,20 +16,19 @@ function Navbar() {
       <IconContext.Provider value={{ color: '#fff' }}>
         <div className='navbar'>
           {/* <Link to='#' className='menu-bars'> */}
-            <FaIcons.FaBars onClick={showSidebar} />
+            <FaIcons.FaBars size={48} onClick={showSidebar} />
           {/* </Link> */}
         </div>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
           <ul className='nav-menu-items' onClick={showSidebar}>
             <li className='navbar-toggle'>
               {/* <Link to='#' className='menu-bars'> */}
-                <AiIcons.AiOutlineClose />
+                <AiIcons.AiOutlineClose size={48}/>
               {/* </Link> */}
             </li>
             <img class="image" src={pf}></img>
             {SidebarData.map((item, index) => {
               return (
-                  
                 <li key={index} className={item.cName}>
                   {/* <Link to={item.path}> */}
                   <a>
