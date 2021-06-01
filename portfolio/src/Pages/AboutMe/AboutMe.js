@@ -25,7 +25,7 @@ class AboutMe extends React.Component {
         console.log(this.props.count)
         return (
             <div class="about-me">
-
+                
             <h1>test</h1>
         </div>
         )
