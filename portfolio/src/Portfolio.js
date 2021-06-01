@@ -6,6 +6,7 @@ import Background from './Components/Background/Background'
 import IntroContent from './Pages/LandingPage/IntroContent'
 import AboutMe from './Pages/AboutMe/AboutMe'
 import {toAboutMePage, toProjectsPage,} from "./Redux/PageNavigation/navigation.actions"
+import Navbar from "./Components/Navbar/Navbar"
 
 const mapStateToProps = state => {
     return {
@@ -36,6 +37,7 @@ class Portfolio extends React.Component {
         console.log(this.props.count)
         return (
             <div class="content">
+                <Navbar></Navbar>
                 {content}
             </div>
         )

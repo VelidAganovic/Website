@@ -29,9 +29,11 @@ function Navbar() {
               return (
                 <li key={index} className={item.cName}>
                   {/* <Link to={item.path}> */}
+                  <a>
                     {item.icon}
-                    <span>{item.title}</span>
+                    <span class="nav-item">{item.title}</span>
                   {/* </Link> */}
+                  </a>
                 </li>
               );
             })}
