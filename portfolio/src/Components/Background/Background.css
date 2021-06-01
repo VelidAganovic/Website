@@ -24,7 +24,8 @@ html, body {
   right: 0;
   height: 100%;
   margin: auto;
-  width: 90vw; }
+  width: 90vw; 
+  overflow: hidden;}
 
 .line {
   position: absolute;
@@ -47,17 +48,17 @@ html, body {
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.27); }
   .line:nth-child(1) {
-    margin-left: 40%; }
+    margin-left: 39%; }
     .line:nth-child(1)::after {
       animation-delay: 1.3s;
       background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, #18CAE6 75%, #18CAE6 100%); }
   .line:nth-child(2) {
-    margin-left: 45%; }
+    margin-left: 44%; }
     .line:nth-child(2)::after {
       animation-delay: 0.5s;
       background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, #FFFFFF 75%, #FFFFFF 100%); }
   .line:nth-child(3) {
-    margin-left: 50%; }
+    margin-left: 49%; }
     .line:nth-child(3)::after {
       animation-delay: 1.9s;
       background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, #DF740C 75%, #DF740C 100%); }

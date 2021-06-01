@@ -5,6 +5,7 @@ import * as AiIcons from 'react-icons/ai';
 import { SidebarData } from './SidebarData';
 import './Navbar.css';
 import { IconContext } from 'react-icons';
+import pf from '../../pf2.jpg'
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
@@ -25,8 +26,10 @@ function Navbar() {
                 <AiIcons.AiOutlineClose />
               {/* </Link> */}
             </li>
+            <img class="image" src={pf}></img>
             {SidebarData.map((item, index) => {
               return (
+                  
                 <li key={index} className={item.cName}>
                   {/* <Link to={item.path}> */}
                   <a>
