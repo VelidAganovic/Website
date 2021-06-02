@@ -34,7 +34,6 @@ class Portfolio extends React.Component {
         if(this.props.aboutmePage === true){
             content = <AboutMe></AboutMe>
         }
-        console.log(this.props.count)
         return (
             <div class="content">
                 <Navbar></Navbar>

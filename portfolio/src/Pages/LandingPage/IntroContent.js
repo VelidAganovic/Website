@@ -24,7 +24,6 @@ const mapDispatchToProps = dispatch => {
 
 class IntroContent extends React.Component {
     render() {
-        console.log(this.props.count)
         return (
             <div class="background">
 
