@@ -11,7 +11,11 @@ function Navbar() {
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
-
+  const size = 3;
+        var lines = [];
+        for (var i = 0; i < size; i++) {
+        lines.push(<div class="line2"></div>);
+        }
   return (
       <IconContext.Provider value={{ color: '#fff' }}>
         <div className='navbar'>
@@ -39,6 +43,9 @@ function Navbar() {
                 </li>
               );
             })}
+            <div class="lines2" >
+              {lines}
+              </div>
           </ul>
         </nav>
       </IconContext.Provider>
