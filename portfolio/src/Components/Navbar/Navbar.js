@@ -11,7 +11,7 @@ function Navbar() {
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
-  const size = 3;
+  const size = 2;
         var lines = [];
         for (var i = 0; i < size; i++) {
         lines.push(<div class="line2"></div>);
@@ -43,9 +43,9 @@ function Navbar() {
                 </li>
               );
             })}
-            <div class="lines2" >
+            {/* <div class="lines2" >
               {lines}
-              </div>
+              </div> */}
           </ul>
         </nav>
       </IconContext.Provider>
