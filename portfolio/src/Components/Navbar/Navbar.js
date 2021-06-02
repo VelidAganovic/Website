@@ -28,7 +28,11 @@ const mapDispatchToProps = dispatch => {
 
 
 function Navbar(props) {
-  const [sidebar, setSidebar] = useState(false);
+
+  var [sidebar, setSidebar] = useState(false);
+  if(props.aboutmePage === true){
+    sidebar = true;
+  }
   console.log(sidebar)
 
   const showSidebar = () => setSidebar(!sidebar);
