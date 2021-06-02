@@ -44,7 +44,7 @@ function Navbar(props) {
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
           <ul className='nav-menu-items' onClick={showSidebar}>
             <li className='navbar-toggle'>
-                <AiIcons.AiOutlineClose size={48}/>
+                {props.aboutmePage ? 'none' : <AiIcons.AiOutlineClose size={48}/>}
             </li>
             <img class="image" src={pf}></img>
             {SidebarData.map((item, index) => {
